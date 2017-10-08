@@ -32,4 +32,3 @@ def won?(board)
       return combination
   end
 end
-
