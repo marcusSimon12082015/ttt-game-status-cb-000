@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 def won?(board)
   #check if the board is empty
-  if board.any?{|i| i != " "}
+  if !board.any?{|i| i != " "}
     #board is empty
     return false
   else
@@ -34,9 +34,8 @@ def won?(board)
       if (position1 == "X" && position2 == "X" && position3 == "X") ||
          (position1 == "O" && position2 == "O" && position3 == "O")
         return combination
-      else
-        return false
       end
     end
   end
+  return false
 end
