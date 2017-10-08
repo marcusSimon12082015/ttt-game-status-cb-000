@@ -30,7 +30,7 @@ def won?(board)
     position3 = board[win_index3]
 
     if (position1 == "X" && position2 == "X" && position3 = "X") ||
-    if (position1 == "O" && position2 == "O" && position3 = "O") 
+       (position1 == "O" && position2 == "O" && position3 = "O")
       return combination
     end
   end
