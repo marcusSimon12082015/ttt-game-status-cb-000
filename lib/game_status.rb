@@ -17,9 +17,9 @@ WIN_COMBINATIONS = [
 def won?(board)
   #check if the board is empty
   if board.any?{|i| i != " "}
-    return false
-  else
     return true
+  else
+    return false
   end
   #check the wining combinations
   WIN_COMBINATIONS.each do |combination|
