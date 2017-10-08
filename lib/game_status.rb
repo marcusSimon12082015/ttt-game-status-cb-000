@@ -39,3 +39,7 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  return board.include?{|i| i == " "}? false : true
+end
