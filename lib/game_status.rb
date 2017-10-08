@@ -63,5 +63,7 @@ def winner?(board)
     winning_combination = won?(board)
     player = board[winning_combination[0]]
     return player
+  else
+    return nil
   end
 end
