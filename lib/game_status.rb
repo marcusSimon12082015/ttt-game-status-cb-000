@@ -16,8 +16,11 @@ WIN_COMBINATIONS = [
 ]
 def won?(board)
   #check if the board is empty
-  return board.any?{|i| i != " "}? false : true
-
+  if board.any?{|i| i != " "} 
+    return false
+  else
+    return true
+  end  
   #check the wining combinations
   WIN_COMBINATIONS.each do |combination|
     win_index1 = combination[0]
