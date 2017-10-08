@@ -20,10 +20,11 @@ def won?(board)
 
   #check the wining combinations
   WIN_COMBINATIONS.each do |combination|
+    #we get the indexes of a winning combination
     win_index1 = combination[0]
     win_index2 = combination[1]
     win_index3 = combination[2]
-
+    #we get the content of those winning combination indexses
     position1 = board[win_index1]
     position2 = board[win_index2]
     position3 = board[win_index3]
