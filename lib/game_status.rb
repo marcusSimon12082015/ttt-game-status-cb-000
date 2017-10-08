@@ -30,5 +30,6 @@ def won?(board)
 
     if position1 == "X" && position2 == "X" && position3 = "X"
       return combination
+    end
   end
 end
