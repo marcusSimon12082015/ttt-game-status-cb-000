@@ -43,3 +43,13 @@ end
 def full?(board)
   return board.include?(" ")? false : true
 end
+
+def draw?(board)
+  if won?(board) == false && !full?(board)
+    return true
+  elsif won?(board) == false && full?(board)
+    return false
+  elsif won?(board) != false
+    return false
+  end
+end
