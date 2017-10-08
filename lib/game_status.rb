@@ -57,3 +57,9 @@ end
 def over?(board)
   return (won?(board) || draw?(board) || full?(board))? true : false
 end
+
+def winner?(board)
+  winning_combination = won?(board)
+  player = board[winning_combination[0]]
+  return player
+end
